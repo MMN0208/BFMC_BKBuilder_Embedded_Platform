@@ -37,7 +37,7 @@ namespace hardware::drivers{
      *  @param f_pwm               pin connected to servo motor
      */
     CSteeringMotor::CSteeringMotor(PinName f_pwm)
-        :CSteeringMotor(f_pwm,-23.0,23.0)
+        :CSteeringMotor(f_pwm,-60.0,60.0)
         
     {
     };
@@ -57,7 +57,7 @@ namespace hardware::drivers{
     {
         m_pwm.period_ms(20); 
         // Set position to zero   
-        m_pwm.write(0.07525);
+        m_pwm.write(0.084755);
     };
 
 
@@ -83,7 +83,7 @@ namespace hardware::drivers{
      */
     float CSteeringMotor::conversion(float f_angle)
     {
-        return (0.0009505 * f_angle + 0.07525);
+        return (0.0009505 * f_angle + 0.084755);
     };
 
     /**

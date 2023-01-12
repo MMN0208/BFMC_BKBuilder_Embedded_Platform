@@ -2,3 +2,7 @@ BUILD/src/
 doc/build/
 doc/source/xml
 .vscode/settings.json
+.DS_Store
+BUILD/.DS_Store
+BUILD/mbed-os/.DS_Store
+mbed-os/.DS_Store

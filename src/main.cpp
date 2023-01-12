@@ -57,7 +57,7 @@ RawSerial          g_rpi(USBTX, USBRX);
  * D9 reppresents the output pin for the servo motor, it must to generate a PWM signal. 
  */
 hardware::drivers::CMotorDriverVnh g_motorVnhDriver(D3, D2, D4, -0.30, 0.30);
-hardware::drivers::CSteeringMotor g_steeringDriver(D9, -23.0, 23.0);
+hardware::drivers::CSteeringMotor g_steeringDriver(D9, -60.0, 60.0);
 
 /// Base sample time for the task manager. The measurement unit of base sample time is second.
 const float g_baseTick = 0.0001; // seconds
